@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of UX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-content">
+        <header>
+            <h1>InnovateTech Solutions</h1>
+            <nav>
+                <a href="#home" id="nav-home" class="active">Home</a>
+                <a href="#about" id="nav-about">About</a>
+                <a href="#services" id="nav-services">Services</a>
+                <a href="#contact" id="nav-contact">Contact</a>
+            </nav>
+        </header>
+
+        <section id="banner">
+            <h2>Experience the frictionless future.</h2>
+            <p>We've eliminated the need for antiquated input methods like mice and trackpads.</p>
+            <button id="btn-learn-more" class="btn-primary">Learn More</button>
+        </section>
+
+        <section id="about">
+            <h3>Why choose us?</h3>
+            <p>Our revolutionary conversational interface ensures you never have to strain your fingers clicking again.
+            </p>
+
+            <div class="card-grid">
+                <div class="card" id="card-1">
+                    <h4>AI Powered</h4>
+                    <p>Everything is driven by our state-of-the-art chatbot. No thinking required.</p>
+                    <button id="btn-ai-details" class="btn-secondary">Details</button>
+                </div>
+                <div class="card" id="card-2">
+                    <h4>Zero Friction</h4>
+                    <p>Say goodbye to confusing menus.</p>
+                    <button id="btn-friction-details" class="btn-secondary">Details</button>
+                </div>
+                <div class="card" id="card-rpg">
+                    <h4>The Great Mistake</h4>
+                    <p>Xerox PARC invented the GUI. Apple refined it. Humanity suffered. We bring back the majesty of
+                        1980s text adventures.</p>
+                    <button id="btn-inspect-room" class="btn-secondary">Inspect Room (RPG Mode)</button>
+                </div>
+            </div>
+
+            <div id="form-container">
+                <h3>Subscribe to our Newsletter</h3>
+                <form id="subscribe-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="input-email">Email Address</label>
+                        <input type="email" id="input-email" placeholder="example@domain.com">
+                    </div>
+                    <button type="submit" id="btn-subscribe" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+
+            <div style="height: 1000px;" id="services">
+                <!-- padding to force scroll -->
+                <p style="padding-top: 500px; text-align: center; color: #888;">Keep scrolling...</p>
+                <p style="padding-top: 400px; text-align: center; color: #888;">Almost there!</p>
+                <button id="btn-secret" class="btn-primary" style="display: block; margin: 0 auto;">Secret
+                    Button</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="chatbot-container">
+        <div id="chatbot-header">
+            <h3>NaviBot 9000</h3>
+        </div>
+        <div id="chatbot-messages">
+            <div class="message bot">
+                Hello human. I am your interface. All manual interactions are disabled for your safety (refer Fahrenheit
+                451). How may I navigate for you today?
+
+            </div>
+        </div>
+        <div id="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Type a command...">
+            <button id="chatbot-submit">→</button>
+        </div>
+    </div>
+
+    <!-- The overlay to block actual clicks -->
+    <div id="interaction-blocker"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
