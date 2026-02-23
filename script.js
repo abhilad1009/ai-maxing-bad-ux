@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("%cWARNING: We are not using any AI in the backend. Expect dumb responses.", "color: red; font-size: 16px; font-weight: bold;");
+    console.log("%cINFO: There is an easter egg in this website. I hope it brings a smile to your face.", "color: green; font-size: 16px; font-weight: bold;");
     const input = document.getElementById('chatbot-input');
     const submitBtn = document.getElementById('chatbot-submit');
     const messagesContainer = document.getElementById('chatbot-messages');
